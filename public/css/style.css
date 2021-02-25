@@ -2,35 +2,85 @@ body {
     margin: 0;
 }
 
-nav {
-    background-color: lightskyblue;
-    position: fixed;
-    width: 100%;
+main {
+    min-height: calc(100vh - 10rem);
 }
 
-h2 {
+nav {
+    background-color: lightskyblue;
+    height: 3.5rem;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    text-align: right;
+}
+
+.title {
     color: purple;
-    margin-left: 10px;
-    float: left;
+    margin-left: 20px;
+    position: absolute;
+    left: 10%;
+    top: 0%;
+    font-size: 2rem;
 }
 
 nav ul {
     list-style: none;
-    text-align: right;
-    vertical-align: middle;
-    padding-top: 9px;
+    display: inline-block;
+    margin-right: 10%;
 }
 
-nav ul li {
-    display: inline-block;
+nav ul li{
+    display: inline;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    padding: 10px;
+    padding: 1rem;
 }
 
 nav ul li a:hover {
     color: purple;
+}
+
+.content {
+    margin: auto 12%;
+}
+
+input[type="text"] {
+    width: 100%;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(93, 93, 230);
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 1.5rem;
+    width: 100%;
+    margin-top: 20px;
 }
